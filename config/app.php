@@ -123,4 +123,5 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    'demo_mode' => filter_var(env('APP_DEMO_MODE', false), FILTER_VALIDATE_BOOLEAN),
 ];
